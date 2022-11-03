@@ -180,7 +180,6 @@ aws --endpoint-url=${AWS_ENDPOINT} \
 
 echo "Now let's see dem logs!"
 sleep 2
-# aws --endpoint-url=${AWS_ENDPOINT} lambda invoke --function-name ${AWS_LAMBDA_FUNCTION_NAME} out --log-type Tail --query 'LogResult' --output text |  base64 -d
 aws s3api list-objects --bucket=${AWS_S3_BUCKET_TWO} --endpoint-url=${AWS_ENDPOINT} --region=${AWS_DEFAULT_REGION} 
 
 echo "Cleanup..."

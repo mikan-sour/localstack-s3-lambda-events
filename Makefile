@@ -1,6 +1,8 @@
 #must read from .env...
 setup:
-	cp ./.env.sample ./.env
+	cp ./.env.sample ./.env && \
+	cd src && npm i
+
 up:
 	sh exec.sh
 down:
