@@ -1,0 +1,11 @@
+.env
+
+lambda
+src/node_modules
+src/package-lock.json
+
+dummyfile.txt
+pol.json
+s3-notif-config.json
+trust-policy.json
+out
